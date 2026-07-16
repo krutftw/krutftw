@@ -1,11 +1,64 @@
-# Tradi3
+<p align="center">
+  <img src="./assets/tradi3-operator-console.svg" width="100%" alt="Tradi3 operator console: trading systems and smart contract security" />
+</p>
 
-I build trading software and audit smart contracts. Most of my work sits somewhere between prediction markets, DeFi, and the tooling needed to make both safer.
+<p align="center">
+  <a href="https://www.polytraderbot.com/"><strong>PolyTraderBot</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://svaroglauncher.com/"><strong>Svarog Launcher</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/krutftw/audit-portfolio"><strong>Security research</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://x.com/Tradi3_"><strong>X</strong></a>
+</p>
 
-- Owner and builder of [PolyTraderBot](https://www.polytraderbot.com/)
-- Lead developer of [Svarog Launcher](https://svaroglauncher.com/)
-- Building [Bitcoin 09](https://github.com/krutftw/bitcoin09), a no-premine CPU proof-of-work network
-- Publishing my finalized [smart contract security research](https://github.com/krutftw/audit-portfolio)
-- Maintaining the [Bounty Operator Kit](https://github.com/krutftw/bounty-operator-kit)
+I am **Tradi3**. I build trading software and spend the rest of my time looking for ways smart contracts can fail.
 
-[X](https://x.com/Tradi3_) · [Sherlock](https://audits.sherlock.xyz/watson/Tradi3) · [Cantina](https://cantina.xyz/u/Tradi3)
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>BUILD // systems</h3>
+      <p>
+        <a href="https://www.polytraderbot.com/"><strong>PolyTraderBot</strong></a><br />
+        <sub>Owner / builder · self-hosted trading automation for Polymarket.</sub>
+      </p>
+      <p>
+        <a href="https://svaroglauncher.com/"><strong>Svarog Launcher</strong></a><br />
+        <sub>Lead developer · Solana token-launching and bundling infrastructure.</sub>
+      </p>
+      <p>
+        <a href="https://github.com/krutftw/bitcoin09"><strong>Bitcoin 09</strong></a><br />
+        <sub>A no-premine, CPU proof-of-work network with a 21 million coin cap.</sub>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>BREAK // assumptions</h3>
+      <p>I review DeFi contracts at the seams: accounting, AMMs, oracle paths, access boundaries, and contract lifecycle edge cases.</p>
+      <p>
+        <a href="https://github.com/krutftw/audit-portfolio"><strong>Open the security research log →</strong></a><br />
+        <sub>Only finalized, publicly verifiable work is listed.</sub>
+      </p>
+      <p>
+        <a href="https://github.com/krutftw/bounty-operator-kit"><strong>Bounty Operator Kit</strong></a><br />
+        <sub>My open-source workflow for scope, PoCs, duplicate checks, and report preparation.</sub>
+      </p>
+    </td>
+  </tr>
+</table>
+
+### `PROOF / PUBLIC RECORD`
+
+| Review | Result | Placement | Record |
+| --- | --- | --- | --- |
+| Revert Finance · StableSwap Hooks | Confirmed High | 58 / 269 | [Cantina](https://cantina.xyz/u/Tradi3) |
+| Base Azul | 1 valid Med/Low · $367 | 53rd | [Immunefi](https://immunefi.com/audit-competition/audit-comp-base-azul/leaderboard/) |
+
+<p align="center">
+  <a href="https://audits.sherlock.xyz/watson/Tradi3">Sherlock</a>
+  &nbsp;·&nbsp;
+  <a href="https://cantina.xyz/u/Tradi3">Cantina</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/krutftw/audit-portfolio">Audit portfolio</a>
+</p>
+
+<p align="center"><code>BUILD → TRACE → BREAK → PROVE</code></p>
