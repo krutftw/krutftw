@@ -73,6 +73,11 @@
     @keyframes stepProve { 0%,62% { fill:#516075; } 67%,90% { fill:#eaf1fb; } 95%,100% { fill:#516075; } }
     @media (prefers-reduced-motion: reduce) {
       .bar, .trace-1, .trace-2, .trace-3, .trace-4, .status-dot, .cursor, .step-build, .step-trace, .step-break, .step-prove, .trip { animation: none; opacity: 1; }
+      .step-build { fill: #69f5d0; }
+      .step-trace { fill: #8da8ff; }
+      .step-break { fill: #ffb25e; }
+      .step-prove { fill: #eaf1fb; }
+      .signal-orb { display: none; }
       .scan { display: none; }
     }
   </style>
@@ -156,7 +161,7 @@
   <path d="M1008 326h31l9-10 12 20 10-10h55" fill="none" stroke="#8da8ff" stroke-width="2" opacity=".78"/>
 
   <path id="signalPath" d="M552 259C590 259 604 236 642 236" fill="none" stroke="url(#signalGradient)" stroke-width="2" stroke-dasharray="5 6" opacity=".8"/>
-  <circle r="4" fill="#eaf1fb" filter="url(#cyanGlow)">
+  <circle class="signal-orb" r="4" fill="#eaf1fb" filter="url(#cyanGlow)">
     <animateMotion dur="3.2s" repeatCount="indefinite" path="M552 259C590 259 604 236 642 236"/>
   </circle>
 
