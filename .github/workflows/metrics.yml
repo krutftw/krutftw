@@ -1,0 +1,23 @@
+name: metrics
+
+on:
+  # Dispatch-only until verified working (needs the Actions billing lock
+  # cleared; may also need a classic PAT saved as the METRICS_TOKEN secret
+  # if the default token is not enough). Add a daily schedule after that.
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate terminal-style metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN || github.token }}
+          user: krutftw
+          template: terminal
+          filename: metrics.svg
+          committer_branch: metrics

@@ -1,8 +1,10 @@
 name: snake
 
 on:
-  schedule:
-    - cron: "0 3 * * *"
+  # Re-enable the daily schedule once the account's Actions billing lock is
+  # cleared (Settings -> Billing), otherwise it fails every day:
+  # schedule:
+  #   - cron: "0 3 * * *"
   workflow_dispatch:
 
 permissions:
