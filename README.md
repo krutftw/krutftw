@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/tradi3-console.svg" width="100%" alt="Animated terminal session: tradi3's operator console — trading systems, a live market feed, and a smart-contract audit trace" />
+  <img src="./assets/tradi3-console-v3.svg" width="100%" alt="Animated terminal session: tradi3's operator console — trading systems, a live market feed, and a smart-contract audit trace" />
 </p>
 
 <p align="center">

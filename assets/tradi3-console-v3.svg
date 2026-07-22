@@ -79,11 +79,7 @@
     .dg { animation: dg 10s linear infinite; }
     @keyframes dg { 0%,9.9% { opacity: 1; } 10%,100% { opacity: 0; } }
 
-    /*RM*/
-    @media (prefers-reduced-motion: reduce) {
-      * { animation: none !important; }
-    }
-    /*/RM*/
+    
   </style>
 
   <!-- ================= chrome ================= -->
