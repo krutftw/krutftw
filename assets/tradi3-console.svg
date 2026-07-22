@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+  <title id="t">tradi3 — operator console</title>
+  <desc id="d">A terminal session: shell commands typing out tradi3's projects and audit record, a live Polymarket feed, and a smart-contract call trace.</desc>
+
+  <defs>
+    <clipPath id="frame"><rect x="0.5" y="0.5" width="1199" height="519" rx="12"/></clipPath>
+    <clipPath id="sparkClip"><rect x="740" y="128" width="444" height="84"/></clipPath>
+    <linearGradient id="fadeL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#0d1117" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Cascadia Mono', 'Liberation Mono', monospace; fill: #e6edf3; }
+    .mut { fill: #7d8590; } .dim { fill: #484f58; }
+    .grn { fill: #3fb950; } .blu { fill: #58a6ff; } .amb { fill: #d29922; }
+    .red { fill: #f85149; } .mag { fill: #bc8cff; }
+    .s11 { font-size: 11px; } .s12 { font-size: 12px; } .s13 { font-size: 13.5px; }
+    .s15 { font-size: 15px; } .bold { font-weight: 700; }
+
+    /* ---- master shell timeline: 24s ---- */
+    .shell { animation: shellFade 24s linear infinite; }
+    @keyframes shellFade { 0%,96.7% { opacity: 1; } 99.4%,100% { opacity: 0; } }
+
+    .r0  { animation: r0 24s linear infinite; }  @keyframes r0  { 0%,1.2%  { opacity: 0; } 1.25%,100% { opacity: 1; } }
+    .r1  { animation: r1 24s linear infinite; }  @keyframes r1  { 0%,2.0%  { opacity: 0; } 2.083%,100% { opacity: 1; } }
+    .r2  { animation: r2 24s linear infinite; }  @keyframes r2  { 0%,7.0%  { opacity: 0; } 7.083%,100% { opacity: 1; } }
+    .r3  { animation: r3 24s linear infinite; }  @keyframes r3  { 0%,10.8% { opacity: 0; } 10.833%,100% { opacity: 1; } }
+    .r4  { animation: r4 24s linear infinite; }  @keyframes r4  { 0%,17.8% { opacity: 0; } 17.917%,100% { opacity: 1; } }
+    .r5  { animation: r5 24s linear infinite; }  @keyframes r5  { 0%,19.3% { opacity: 0; } 19.375%,100% { opacity: 1; } }
+    .r6  { animation: r6 24s linear infinite; }  @keyframes r6  { 0%,20.7% { opacity: 0; } 20.833%,100% { opacity: 1; } }
+    .r7  { animation: r7 24s linear infinite; }  @keyframes r7  { 0%,24.9% { opacity: 0; } 25%,100% { opacity: 1; } }
+    .r8  { animation: r8 24s linear infinite; }  @keyframes r8  { 0%,35.3% { opacity: 0; } 35.417%,100% { opacity: 1; } }
+    .r9  { animation: r9 24s linear infinite; }  @keyframes r9  { 0%,37.0% { opacity: 0; } 37.083%,100% { opacity: 1; } }
+    .r10 { animation: r10 24s linear infinite; } @keyframes r10 { 0%,38.6% { opacity: 0; } 38.75%,100% { opacity: 1; } }
+    .r11 { animation: r11 24s linear infinite; } @keyframes r11 { 0%,41.6% { opacity: 0; } 41.667%,100% { opacity: 1; } }
+
+    /* typed commands: clip reveal, char-stepped */
+    .cmd1 { animation: cmd1 24s linear infinite; }
+    @keyframes cmd1 { 0%,2.083% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(6,end); } 5.833%,100% { clip-path: inset(0 -2% 0 0); } }
+    .cmd2 { animation: cmd2 24s linear infinite; }
+    @keyframes cmd2 { 0%,10.833% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(17,end); } 16.667%,100% { clip-path: inset(0 -2% 0 0); } }
+    .cmd3 { animation: cmd3 24s linear infinite; }
+    @keyframes cmd3 { 0%,25% { clip-path: inset(0 100% 0 0); animation-timing-function: steps(30,end); } 34.167%,100% { clip-path: inset(0 -2% 0 0); } }
+
+    /* typing cursors: slide in char steps, visible only while typing */
+    .cur1 { animation: cur1 24s linear infinite; }
+    @keyframes cur1 { 0%,2.0% { opacity: 0; transform: translateX(0); } 2.083% { opacity: 1; transform: translateX(0); animation-timing-function: steps(6,end); } 5.833% { opacity: 1; transform: translateX(54px); } 6.4%,100% { opacity: 0; transform: translateX(54px); } }
+    .cur2 { animation: cur2 24s linear infinite; }
+    @keyframes cur2 { 0%,10.8% { opacity: 0; transform: translateX(0); } 10.833% { opacity: 1; transform: translateX(0); animation-timing-function: steps(17,end); } 16.667% { opacity: 1; transform: translateX(153px); } 17.2%,100% { opacity: 0; transform: translateX(153px); } }
+    .cur3 { animation: cur3 24s linear infinite; }
+    @keyframes cur3 { 0%,24.9% { opacity: 0; transform: translateX(0); } 25% { opacity: 1; transform: translateX(0); animation-timing-function: steps(30,end); } 34.167% { opacity: 1; transform: translateX(270px); } 34.7%,100% { opacity: 0; transform: translateX(270px); } }
+
+    .blink { animation: blink 1.06s linear infinite; }
+    @keyframes blink { 0%,49.9% { opacity: 1; } 50%,100% { opacity: 0; } }
+
+    /* market feed */
+    .tick { animation: tick 14s linear infinite; }
+    @keyframes tick { from { transform: translateX(0); } to { transform: translateX(-444px); } }
+    .fA { animation: flick 5.1s linear infinite; }
+    @keyframes flick { 0%,33.2% { opacity: 1; } 33.4%,100% { opacity: 0; } }
+    .fB { animation: flick 6.3s linear infinite; }
+    .pulse { animation: pulse 2.4s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: 0.35; } 50% { opacity: 1; } }
+    .gauge { transform-box: fill-box; transform-origin: left center; animation: gauge 8s ease-in-out infinite alternate; }
+    @keyframes gauge { from { transform: scaleX(0.74); } to { transform: scaleX(0.92); } }
+
+    /* audit trace sweep */
+    .sweep { animation: sweep 6s linear infinite; }
+    @keyframes sweep { 0%,24.9% { transform: translateY(0); } 25%,49.9% { transform: translateY(30px); } 50%,74.9% { transform: translateY(60px); } 75%,100% { transform: translateY(90px); } }
+    .trip { animation: trip 6s linear infinite; }
+    @keyframes trip { 0%,49% { opacity: 0.35; } 50%,53% { opacity: 1; } 54%,56% { opacity: 0.3; } 57%,74% { opacity: 1; } 75%,100% { opacity: 0.35; } }
+
+    /* status bar */
+    .tab { animation: tab 8s linear infinite; }
+    @keyframes tab { 0%,24.9% { transform: translateX(0); } 25%,49.9% { transform: translateX(100px); } 50%,74.9% { transform: translateX(200px); } 75%,100% { transform: translateX(300px); } }
+    .sp { animation: spin 2s linear infinite; }
+    @keyframes spin { 0%,24.9% { opacity: 1; } 25%,100% { opacity: 0; } }
+    .dg { animation: dg 10s linear infinite; }
+    @keyframes dg { 0%,9.9% { opacity: 1; } 10%,100% { opacity: 0; } }
+
+    /*RM*/
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+    /*/RM*/
+  </style>
+
+  <!-- ================= chrome ================= -->
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="520" fill="#0d1117"/>
+    <rect width="1200" height="40" fill="#161b22"/>
+    <rect x="0" y="472" width="1200" height="48" fill="#161b22"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="519" rx="12" fill="none" stroke="#30363d"/>
+  <line x1="0" y1="40.5" x2="1200" y2="40.5" stroke="#30363d"/>
+  <line x1="0" y1="472.5" x2="1200" y2="472.5" stroke="#30363d"/>
+  <line x1="724.5" y1="41" x2="724.5" y2="472" stroke="#21262d"/>
+  <line x1="725" y1="258.5" x2="1200" y2="258.5" stroke="#21262d"/>
+
+  <!-- titlebar -->
+  <circle cx="24" cy="20" r="5.5" fill="#f85149" opacity="0.75"/>
+  <circle cx="44" cy="20" r="5.5" fill="#d29922" opacity="0.75"/>
+  <circle cx="64" cy="20" r="5.5" fill="#3fb950" opacity="0.75"/>
+  <text x="88" y="24.5" class="s12 mut">tradi3@operator — tmux · console</text>
+  <circle cx="1058" cy="20" r="3.5" fill="#3fb950" class="pulse"/>
+  <text x="1068" y="24.5" class="s12 grn">LIVE</text>
+  <text x="1148" y="24.5" class="s12 mut" text-anchor="end">UTC 14</text>
+  <text x="1148.5" y="24" class="s12 mut blink">:</text>
+  <text x="1156" y="24.5" class="s12 mut">07</text>
+
+  <!-- ================= shell (left pane) ================= -->
+  <g class="shell">
+    <!-- motd -->
+    <g class="r0">
+      <text x="20" y="80" class="grn bold" font-size="26" letter-spacing="3">TRADI3</text>
+      <text x="152" y="80" class="dim" font-size="15">// operator console</text>
+      <text x="20" y="103" class="s12 mut">trading systems × smart-contract security — build → trace → break → prove</text>
+      <line x1="20" y1="118" x2="704" y2="118" stroke="#21262d"/>
+    </g>
+
+    <!-- $ whoami -->
+    <g class="r1">
+      <text x="20" y="150" class="s15"><tspan class="grn">tradi3</tspan><tspan class="dim">@op</tspan><tspan class="blu">:~</tspan><tspan class="mut">$</tspan></text>
+      <text x="137" y="150" class="s15 cmd1" textLength="54" lengthAdjust="spacingAndGlyphs">whoami</text>
+      <g class="cur1"><rect x="137" y="137" width="8.5" height="17" fill="#3fb950" opacity="0.9"/></g>
+    </g>
+    <text x="20" y="177" class="s13 mut r2">builder of trading systems · breaker of smart contracts</text>
+
+    <!-- cmd2: operate stack -->
+    <g class="r3">
+      <text x="20" y="209" class="s15"><tspan class="grn">tradi3</tspan><tspan class="dim">@op</tspan><tspan class="blu">:~</tspan><tspan class="mut">$</tspan></text>
+      <text x="137" y="209" class="s15 cmd2" textLength="153" lengthAdjust="spacingAndGlyphs">./operate --stack</text>
+      <g class="cur2"><rect x="137" y="196" width="8.5" height="17" fill="#3fb950" opacity="0.9"/></g>
+    </g>
+    <g class="r4">
+      <text x="36" y="236" class="s13">polytraderbot</text>
+      <text x="196" y="236" class="s13 mut">polymarket trading automation</text>
+      <text x="688" y="236" class="s13 grn" text-anchor="end">[ RUNNING ]</text>
+    </g>
+    <g class="r5">
+      <text x="36" y="263" class="s13">svarog-launcher</text>
+      <text x="196" y="263" class="s13 mut">solana launch infrastructure</text>
+      <text x="688" y="263" class="s13 blu" text-anchor="end">[ SHIPPING ]</text>
+    </g>
+    <g class="r6">
+      <text x="36" y="290" class="s13">bitcoin09</text>
+      <text x="196" y="290" class="s13 mut">cpu proof-of-work · 21M cap · no premine</text>
+      <text x="688" y="290" class="s13 amb" text-anchor="end">[ MINING ]</text>
+    </g>
+
+    <!-- cmd3: audit grep -->
+    <g class="r7">
+      <text x="20" y="322" class="s15"><tspan class="grn">tradi3</tspan><tspan class="dim">@op</tspan><tspan class="blu">:~</tspan><tspan class="mut">$</tspan></text>
+      <text x="137" y="322" class="s15 cmd3" textLength="270" lengthAdjust="spacingAndGlyphs">audit --grep invariant ./defi/</text>
+      <g class="cur3"><rect x="137" y="309" width="8.5" height="17" fill="#3fb950" opacity="0.9"/></g>
+    </g>
+    <text x="36" y="349" class="s13 r8"><tspan class="red">[H]</tspan><tspan class="mut"> stableswap-hooks accounting drift  → </tspan><tspan class="grn">confirmed</tspan><tspan class="mut"> · cantina 58/269</tspan></text>
+    <text x="36" y="376" class="s13 r9"><tspan class="amb">[M]</tspan><tspan class="mut"> oracle staleness at settlement     → </tspan><tspan class="grn">paid</tspan><tspan class="mut"> · immunefi base-azul</tspan></text>
+    <text x="36" y="403" class="s13 r10"><tspan class="mut">report log → </tspan><tspan class="blu">github.com/krutftw/audit-portfolio</tspan></text>
+
+    <!-- idle prompt -->
+    <g class="r11">
+      <text x="20" y="437" class="s15"><tspan class="grn">tradi3</tspan><tspan class="dim">@op</tspan><tspan class="blu">:~</tspan><tspan class="mut">$</tspan></text>
+      <rect x="137" y="424" width="8.5" height="17" fill="#3fb950" class="blink"/>
+    </g>
+  </g>
+
+  <!-- ================= market (right top) ================= -->
+  <text x="740" y="66" class="s12 mut">▴ market — polymarket feed</text>
+  <circle cx="1146" cy="61.5" r="3" fill="#3fb950" class="pulse"/>
+  <text x="1176" y="66" class="s11 dim" text-anchor="end">wss</text>
+  <line x1="740" y1="78" x2="1184" y2="78" stroke="#21262d"/>
+
+  <text x="740" y="102" class="s13 mut">BTC-100K-BY-DEC</text>
+  <g class="s13" text-anchor="end">
+    <text x="1176" y="102" class="grn fA">YES 0.63 ▴</text>
+    <text x="1176" y="102" class="grn fA" style="animation-delay:-3.4s">YES 0.64 ▴</text>
+    <text x="1176" y="102" class="red fA" style="animation-delay:-1.7s">YES 0.61 ▾</text>
+  </g>
+  <text x="740" y="124" class="s13 mut">FED-CUT-SEPT</text>
+  <g class="s13" text-anchor="end">
+    <text x="1176" y="124" class="red fB">NO 0.41 ▾</text>
+    <text x="1176" y="124" class="red fB" style="animation-delay:-4.2s">NO 0.40 ▾</text>
+    <text x="1176" y="124" class="grn fB" style="animation-delay:-2.1s">NO 0.43 ▴</text>
+  </g>
+
+  <!-- scrolling sparkline: two identical 444px periods, shifted left forever -->
+  <g clip-path="url(#sparkClip)">
+    <g transform="translate(740,0)">
+    <g class="tick">
+      <g>
+        <path d="M0 170 L18 166 L36 172 L58 160 L76 176 L96 168 L114 182 L132 158 L154 164 L172 148 L190 156 L210 142 L228 150 L246 138 L264 152 L282 146 L300 160 L318 150 L336 168 L354 158 L372 174 L390 166 L408 178 L426 172 L444 170 L444 212 L0 212 Z" fill="#3fb950" opacity="0.07"/>
+        <path d="M0 170 L18 166 L36 172 L58 160 L76 176 L96 168 L114 182 L132 158 L154 164 L172 148 L190 156 L210 142 L228 150 L246 138 L264 152 L282 146 L300 160 L318 150 L336 168 L354 158 L372 174 L390 166 L408 178 L426 172 L444 170" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.75"/>
+        <circle cx="246" cy="138" r="3" fill="#3fb950" class="pulse"/>
+      </g>
+      <g transform="translate(444,0)">
+        <path d="M0 170 L18 166 L36 172 L58 160 L76 176 L96 168 L114 182 L132 158 L154 164 L172 148 L190 156 L210 142 L228 150 L246 138 L264 152 L282 146 L300 160 L318 150 L336 168 L354 158 L372 174 L390 166 L408 178 L426 172 L444 170 L444 212 L0 212 Z" fill="#3fb950" opacity="0.07"/>
+        <path d="M0 170 L18 166 L36 172 L58 160 L76 176 L96 168 L114 182 L132 158 L154 164 L172 148 L190 156 L210 142 L228 150 L246 138 L264 152 L282 146 L300 160 L318 150 L336 168 L354 158 L372 174 L390 166 L408 178 L426 172 L444 170" fill="none" stroke="#3fb950" stroke-width="1.5" opacity="0.75"/>
+        <circle cx="246" cy="138" r="3" fill="#3fb950" class="pulse"/>
+      </g>
+    </g>
+    </g>
+    <rect x="740" y="128" width="26" height="84" fill="url(#fadeL)"/>
+  </g>
+
+  <text x="740" y="240" class="s11 dim">24h flow</text>
+  <rect x="812" y="232" width="300" height="6" rx="3" fill="#21262d"/>
+  <rect x="812" y="232" width="300" height="6" rx="3" fill="#238636" class="gauge"/>
+  <text x="1176" y="240" class="s11 dim" text-anchor="end">streaming</text>
+
+  <!-- ================= trace (right bottom) ================= -->
+  <text x="740" y="284" class="s12 mut">⌕ trace — router.swap()</text>
+  <text x="1176" y="284" class="s11 dim" text-anchor="end">sim</text>
+  <line x1="740" y1="296" x2="1184" y2="296" stroke="#21262d"/>
+
+  <rect x="736" y="304" width="448" height="26" rx="4" fill="#388bfd" opacity="0.09" class="sweep"/>
+  <text x="748" y="322" class="s13"><tspan class="mag">→</tspan><tspan> router.swap(amountIn)</tspan></text>
+  <text x="766" y="352" class="s13 mut">├ pool.sync()</text>
+  <text x="1176" y="352" class="s13 blu" text-anchor="end">Δ reserves</text>
+  <text x="766" y="382" class="s13 mut">├ invariant(k)</text>
+  <text x="1176" y="382" class="s13 amb trip" text-anchor="end">✗ TRIPPED</text>
+  <text x="766" y="412" class="s13 mut">└ poc.build() → report</text>
+  <text x="1176" y="412" class="s13 grn" text-anchor="end">✓ PAID</text>
+
+  <line x1="740" y1="432" x2="1184" y2="432" stroke="#21262d"/>
+  <text x="740" y="454" class="s11 dim">cantina 58/269 · immunefi $367 · sherlock — only public, finalized work</text>
+
+  <!-- ================= status bar (tmux style) ================= -->
+  <g>
+    <rect x="16" y="482" width="92" height="26" rx="4" fill="#238636" opacity="0.22" class="tab"/>
+    <rect x="16.5" y="482.5" width="91" height="25" rx="4" fill="none" stroke="#3fb950" opacity="0.55" class="tab"/>
+    <text x="62"  y="499.5" class="s12" text-anchor="middle">0:build</text>
+    <text x="162" y="499.5" class="s12" text-anchor="middle">1:trace</text>
+    <text x="262" y="499.5" class="s12" text-anchor="middle">2:break</text>
+    <text x="362" y="499.5" class="s12" text-anchor="middle">3:prove</text>
+  </g>
+  <text x="880" y="499.5" class="s12 mut" text-anchor="end">sherlock · cantina · immunefi</text>
+  <g class="s12">
+    <text x="906" y="499.5" class="grn sp" text-anchor="middle">|</text>
+    <text x="906" y="499.5" class="grn sp" text-anchor="middle" style="animation-delay:-1.5s">/</text>
+    <text x="906" y="499.5" class="grn sp" text-anchor="middle" style="animation-delay:-1.0s">—</text>
+    <text x="906" y="499.5" class="grn sp" text-anchor="middle" style="animation-delay:-0.5s">\</text>
+  </g>
+  <text x="932" y="499.5" class="s12 mut" textLength="123" lengthAdjust="spacingAndGlyphs">bitcoin09 h=00091</text>
+  <g class="s12">
+    <text x="1075" y="499.5" class="mut dg">0</text>
+    <text x="1075" y="499.5" class="mut dg" style="animation-delay:-9s">1</text>
+    <text x="1075" y="499.5" class="mut dg" style="animation-delay:-8s">2</text>
+    <text x="1075" y="499.5" class="mut dg" style="animation-delay:-7s">3</text>
+    <text x="1075" y="499.5" class="mut dg" style="animation-delay:-6s">4</text>
+    <text x="1075" y="499.5" class="mut dg" style="animation-delay:-5s">5</text>
+    <text x="1075" y="499.5" class="mut dg" style="animation-delay:-4s">6</text>
+    <text x="1075" y="499.5" class="mut dg" style="animation-delay:-3s">7</text>
+    <text x="1075" y="499.5" class="mut dg" style="animation-delay:-2s">8</text>
+    <text x="1075" y="499.5" class="mut dg" style="animation-delay:-1s">9</text>
+  </g>
+  <text x="1184" y="499.5" class="s12 dim" text-anchor="end">up 247d</text>
+</svg>
