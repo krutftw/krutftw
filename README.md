@@ -50,8 +50,10 @@ I am **Tradi3**. I build trading software and spend the rest of my time looking 
 
 | Review | Result | Placement | Record |
 | --- | --- | --- | --- |
-| Revert Finance · StableSwap Hooks | Confirmed High | 58 / 269 | [Cantina](https://cantina.xyz/u/Tradi3) |
+| Revert Finance · StableSwap Hooks | 1 High · 1 Medium | 58 / 269 | [Cantina](https://cantina.xyz/u/Tradi3) |
 | Base Azul | 1 valid Med/Low · $367 | 53rd | [Immunefi](https://immunefi.com/audit-competition/audit-comp-base-azul/leaderboard/) |
+| Metric | 3 Mediums · 1.66 USDC | 24th | [Sherlock](https://audits.sherlock.xyz/watson/Tradi3) |
+| Tare | 2.61 USDC payout | 172nd | [Sherlock](https://audits.sherlock.xyz/watson/Tradi3) |
 
 <p align="center">
   <a href="https://audits.sherlock.xyz/watson/Tradi3">Sherlock</a>
