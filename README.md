@@ -3,16 +3,18 @@
 </p>
 
 <p align="center">
+  <a href="https://tradi3.com/"><strong>Website</strong></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/krutftw/audit-portfolio"><strong>Security research</strong></a>
+  &nbsp;·&nbsp;
   <a href="https://www.polytraderbot.com/"><strong>PolyTraderBot</strong></a>
   &nbsp;·&nbsp;
   <a href="https://svaroglauncher.com/"><strong>Svarog Launcher</strong></a>
   &nbsp;·&nbsp;
-  <a href="https://github.com/krutftw/audit-portfolio"><strong>Security research</strong></a>
-  &nbsp;·&nbsp;
-  <a href="https://x.com/Tradi3_"><strong>X</strong></a>
+  <a href="mailto:hello@tradi3.com"><strong>Contact</strong></a>
 </p>
 
-I am **Tradi3**. I build trading software and spend the rest of my time looking for ways smart contracts can fail.
+I am **Kurt Landman (Tradi3)**. I build self-hosted trading software and review DeFi contracts. The Revert Finance High below includes a full write-up and runnable PoC.
 
 <table>
   <tr>
@@ -27,8 +29,8 @@ I am **Tradi3**. I build trading software and spend the rest of my time looking 
         <sub>Lead developer · Solana token-launching and bundling infrastructure.</sub>
       </p>
       <p>
-        <a href="https://github.com/krutftw/bitcoin09"><strong>Bitcoin 09</strong></a><br />
-        <sub>A no-premine, CPU proof-of-work network with a 21 million coin cap.</sub>
+        <a href="https://github.com/krutftw/fetchmux"><strong>FetchMux</strong></a><br />
+        <sub>Self-hosted retrieval router for AI agents, with provider routing and budgets.</sub>
       </p>
     </td>
     <td width="50%" valign="top">
@@ -48,12 +50,13 @@ I am **Tradi3**. I build trading software and spend the rest of my time looking 
 
 ### `PROOF / PUBLIC RECORD`
 
-| Review | Result | Placement | Record |
-| --- | --- | --- | --- |
-| Revert Finance · StableSwap Hooks | 1 High · 1 Medium | 56 / 269 | [Cantina](https://cantina.xyz/competitions/e55ee7b9-6c99-42f8-8338-39f3dd134ef3/leaderboard) |
-| Base Azul | 1 valid Med/Low · $367 | 53rd | [Immunefi](https://immunefi.com/audit-competition/audit-comp-base-azul/leaderboard/) |
-| Metric | 3 Mediums · 1.66 USDC | 24th | [Sherlock](https://audits.sherlock.xyz/watson/Tradi3) |
-| Tare | 2.61 USDC payout | 172nd | [Sherlock](https://audits.sherlock.xyz/watson/Tradi3) |
+| Review | Public result | Check it |
+| --- | --- | --- |
+| Revert Finance · StableSwap Hooks | 1 High · 1 Medium | [Cantina leaderboard](https://cantina.xyz/competitions/e55ee7b9-6c99-42f8-8338-39f3dd134ef3/leaderboard) · [High write-up and PoC](https://github.com/krutftw/audit-portfolio/blob/main/findings/2026-04-revert-finance-stableswap-hooks.md) |
+| Metric | 3 Mediums | [Sherlock](https://audits.sherlock.xyz/watson/Tradi3) |
+| Base Azul | 1 Medium | [Immunefi](https://immunefi.com/audit-competition/audit-comp-base-azul/leaderboard/) |
+
+The [full research log](https://github.com/krutftw/audit-portfolio) has the remaining public results and disclosure notes.
 
 <p align="center">
   <a href="https://audits.sherlock.xyz/watson/Tradi3">Sherlock</a>
@@ -61,6 +64,8 @@ I am **Tradi3**. I build trading software and spend the rest of my time looking 
   <a href="https://cantina.xyz/u/Tradi3">Cantina</a>
   &nbsp;·&nbsp;
   <a href="https://github.com/krutftw/audit-portfolio">Audit portfolio</a>
+  &nbsp;·&nbsp;
+  <a href="https://tradi3.com/">tradi3.com</a>
 </p>
 
 <p align="center"><code>BUILD → TRACE → BREAK → PROVE</code></p>
