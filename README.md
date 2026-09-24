@@ -1,7 +1,7 @@
 <a href="https://tradi3.com/">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/tradi3-titanium-still.png">
-    <img src="assets/tradi3-titanium.webp" alt="Tradi3 — Kurt Landman. Smart contract security and software development. A titanium T3 sculpture with a red-lit seam." width="1200">
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/tradi3-titanium-still.png?v=tron">
+    <img src="assets/tradi3-titanium.webp?v=tron" alt="Tradi3 — Kurt Landman. Smart contract security and software development. A titanium T3 sculpture with red light trails." width="1200">
   </picture>
 </a>
 
