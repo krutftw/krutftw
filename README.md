@@ -28,7 +28,7 @@ I review smart contracts and blockchain systems, focusing on accounting, AMMs, o
 
 ENS credits **23 valid submissions: 1 Chief and 22 duplicates**, plus 1 separate Insight. The **17 Critical-rated submissions** are the highest Critical count among the leaderboard's 186 listed researchers. These counts include duplicates and do not represent unique vulnerabilities.
 
-The separate [Immunefi profile](https://immunefi.com/profile/Tradi3/) snapshot on 8 October 2026 records **5 accepted competition reports: 1 Critical, 3 High, and 1 Medium**, with **$4,537** in displayed total earnings. This profile snapshot excludes ENS and is not an all-platform total. Counts include accepted duplicate reports.
+The [Immunefi profile](https://immunefi.com/profile/Tradi3/) on 10 October 2026 shows **Top Ranked, 77th all time**, with **28 accepted audit competition reports (17 Critical, 4 High, 5 Medium, 1 Low, 1 Insight)** and **$5,946** in displayed total earnings. These are Immunefi totals, not an all-platform total, and they include accepted duplicate reports.
 
 [Public competition reports](https://tradi3.com/reports/) · [Revert Finance High write-up](https://github.com/krutftw/audit-portfolio/blob/main/findings/2026-04-revert-finance-stableswap-hooks.md)
 
