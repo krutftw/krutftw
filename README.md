@@ -1,7 +1,7 @@
 <a href="https://tradi3.com/">
   <picture>
     <source media="(prefers-reduced-motion: reduce)" srcset="assets/tradi3-titanium-still.png?v=tron">
-    <img src="assets/tradi3-titanium.webp?v=tron" alt="Tradi3 — Kurt Landman. Smart contract security and software development. A titanium T3 sculpture with red light trails." width="1200">
+    <img src="assets/tradi3-titanium.webp?v=tron" alt="Tradi3 · Kurt Landman. Smart contract security and software development. A titanium T3 sculpture with red light trails." width="1200">
   </picture>
 </a>
 
@@ -28,12 +28,16 @@ I review smart contracts and blockchain systems, focusing on accounting, AMMs, o
 
 ENS credits **23 valid submissions: 1 Chief and 22 duplicates**, plus 1 separate Insight. The **17 Critical-rated submissions** are the highest Critical count among the leaderboard's 186 listed researchers. These counts include duplicates and do not represent unique vulnerabilities.
 
-The [Immunefi profile](https://immunefi.com/profile/Tradi3/) on 10 October 2026 shows **Top Ranked, 77th all time**, with **28 accepted audit competition reports (17 Critical, 4 High, 5 Medium, 1 Low, 1 Insight)** and **$5,946** in displayed total earnings. These are Immunefi totals, not an all-platform total, and they include accepted duplicate reports.
+The [Immunefi profile](https://immunefi.com/profile/Tradi3/) on 19 October 2026 shows **Top Ranked, 77th all time**, with **28 accepted audit competition reports (17 Critical, 4 High, 5 Medium, 1 Low, 1 Insight)** and **$5,946** in displayed total earnings. These are Immunefi totals, not an all-platform total, and they include accepted duplicate reports.
 
 [Public competition reports](https://tradi3.com/reports/) · [Revert Finance High write-up](https://github.com/krutftw/audit-portfolio/blob/main/findings/2026-04-revert-finance-stableswap-hooks.md)
 
 ## Software I build
 
-- **[PolyTraderBot](https://www.polytraderbot.com/)** — self-hosted trading automation for Polymarket. Owner and developer.
-- **[Svarog Launcher](https://svaroglauncher.com/)** — Solana token-launching and bundling software. Lead developer.
-- **[Bounty Operator](https://bountyoperator.com/)** — review bug bounty reports and supporting files with source citations, evidence checks, and model comparisons. [Source](https://github.com/bountyoperator/bounty-operator).
+- **[AskJohnno](https://askjohnno.com/)**: researched sports forecasts delivered privately through Telegram, with every settled result kept on a [public record](https://askjohnno.com/record). Owner and developer.
+- **[Bounty Operator](https://bountyoperator.com/)**: pre-submission review for bug bounty reports and smart contract findings, with file-and-line citations, prior-art checks, MCP agent tools, and the Paydirt model benchmark. [Source](https://github.com/bountyoperator/bounty-operator).
+- **[PolyTraderBot](https://www.polytraderbot.com/)**: non-custodial Polymarket [trading terminal](https://terminal.polytraderbot.com/terminal/) with pre-trade cost previews and verified P&L cards, alongside six self-hosted trading bots. Owner and developer.
+- **[PolyTortoise](https://polytortoise.com/)**: automated Polymarket copy trading in Telegram, with free paper mode and configurable position and loss limits. Developer.
+- **[Svarog Launcher](https://svaroglauncher.com/)**: Solana token-launching, bundling, and trading software for Pump.fun and Raydium. Lead developer.
+- **[Switchya & Switchyard](https://switchya.com/)**: local coding workspace and CLI for Codex, Claude Code, Antigravity, and API models, paired with an open-source Rust LLM gateway. [Source](https://github.com/ichikuruma22-star/switchyard).
+- **[RAM Raccoon](https://github.com/krutftw/ramraccoon)**: local memory diagnostics and approval-gated recovery for developers and coding agents. Open source.
